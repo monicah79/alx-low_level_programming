@@ -1,16 +1,9 @@
-/**
- * @file
- * @brief A program that prints a string to the standard output.
- */
-
 #include <stdio.h>
 
 /**
- * Entry point of the program.
+ * main - Entry point
  *
- * This function prints a string to the standard output.
- *
- * @return 0 on success.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
