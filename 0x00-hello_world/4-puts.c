@@ -1,5 +1,5 @@
 /**
- * @file 4-puts.c
+ * @file
  * @brief A program that prints a string to the standard output.
  */
 
