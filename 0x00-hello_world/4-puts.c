@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main-This prints programming is like building a multiligual puzzle
+ * main-Entry point
  *
  * Return-This return 0 (Success)
  */
