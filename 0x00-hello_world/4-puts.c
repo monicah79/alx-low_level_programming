@@ -1,3 +1,8 @@
+/**
+ * @file 4-puts.c
+ * @brief A program that prints a string to the standard output.
+ */
+
 #include <stdio.h>
 
 /**
