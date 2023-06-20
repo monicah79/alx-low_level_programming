@@ -3,13 +3,13 @@ include "main.h"
 /**
  * _islower - check the code.
  *
+ * @c: character to be checked
+ *
  * Return: Always 0.
  */
 
-int _islower(void)
+int _islower(int c)
 {
-	int c = getchar();
-
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
