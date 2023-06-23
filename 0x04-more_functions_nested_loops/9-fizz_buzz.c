@@ -1,31 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - main function of program
+ * Return: 0
  */
 
-int main(void)
+int  main(void)
 {
-	int x;
+	int i;
 
-	for (x = 1; x < 100; x++)
+	i = 1;
+
+	while (i <= 100)
 	{
-		if (x % 3 == 0 && x % 5 == 0)
-		{
+		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz");
-		} else if
-		(x % 3 == 0)
-		{
+		else if (i % 3 == 0)
 			printf("Fizz");
-		} else if
-		(x % 5 == 0)
-		{
+		else if (i % 5 == 0)
 			printf("Buzz");
-		}
-		printf("%d ", x);
+		else
+			printf("%d", i);
+		if (i != 100)
+			printf(" ");
+		i++;
 	}
 	printf("\n");
+
 	return (0);
 }
+
