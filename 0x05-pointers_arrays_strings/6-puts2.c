@@ -1,29 +1,25 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _isupper - This checks for Uppercase char
+ * puts2 - This checks for Uppercase char
  *
- * @c: This is a char
+ * @str: This is a char
  *
  * Return: always 0
  */
 
 void puts2(char *str)
 {
-	int i, j;
+	int n = strlen(str);
+	int i;
 
-	for (i = 0; i >= 0; i++)
+	for (i = 0; i < n; i++)
 	{
-		if (str[i] == '\0')
+		if ((str[i] - '0') % 2 == 0)
 		{
-			break;
+			_putchar(str[i]);
 		}
-	}
-
-	for (j = 0; j < i - j; j++)
-	{
-		_putchar(str[j]);
-		j += 1;
 	}
 	_putchar('\n');
 }
