@@ -1,5 +1,25 @@
 #include "main.h"
-#include <math.h>
+#include <stdio.h>
+
+/**
+ * a_prime - check the code
+ *@n: print prime number
+ *@i: print prime number
+ * Return: Always 0.
+ */
+
+int a_prime(int n, int i)
+{
+	if (i >= n)
+	{
+		return (1);
+	}
+	if (n % i == 0)
+	{
+		return (0);
+	}
+	return (a_prime(n, ++i));
+}
 
 /**
  * is_prime_number - check the code
@@ -9,18 +29,10 @@
 
 int is_prime_number(int n)
 {
-	int i;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
-	for (i = 2; i < n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return (a_prime(n, 2));
+
 }
