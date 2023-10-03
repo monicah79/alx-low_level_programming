@@ -22,6 +22,7 @@ void close_elf(int elf);
  * @e_ident: points to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
+ * Return: Nothing
  */
 void check_elf(unsigned char *e_ident)
 {
